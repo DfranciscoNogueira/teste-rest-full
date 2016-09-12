@@ -17,7 +17,7 @@ public class ConexaoUtil {
     private final String DRIVER = "org.postgresql.Driver";
     private final String URL = "jdbc:postgresql://localhost:5432/web-service-teste";
     private final String USUARIO = "postgres";
-    private final String SENHA = "Java@5151";
+    private final String SENHA = "root";
     private Connection conexao = null;
 
     public Connection criarConexao() {

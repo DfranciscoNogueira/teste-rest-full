@@ -1,0 +1,26 @@
+-- crie um banco de dados com o nome : web-service-teste
+
+CREATE DATABASE "web-service-teste"
+  WITH OWNER = postgres
+       ENCODING = 'UTF8'
+       TABLESPACE = pg_default
+       LC_COLLATE = 'Portuguese_Brazil.1252'
+       LC_CTYPE = 'Portuguese_Brazil.1252'
+       CONNECTION LIMIT = -1;
+
+-- criar tabelas e colunas
+
+CREATE TABLE public.cliente
+(
+   id serial NOT NULL, 
+   nome character varying(30), 
+   cpf character varying(30), 
+   endereco character varying(30)
+) 
+WITH (
+  OIDS = FALSE
+)
+
+-- insert na tabela cliente
+
+INSERT INTO cliente VALUES (1, 'jose', '45848949', 'avenida joaquim'), (2, 'marcos', '4899552956', 'condominio terere')
